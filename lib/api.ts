@@ -1,36 +1,25 @@
 import { useState, useEffect } from 'react';
 
-export const BASE_URL = '/api/app';
+export const BASE_URL = 'https://qwertydb.bunker-255.com/api/app';
 
 export const api = {
   getToken: () => localStorage.getItem('nc_token'),
   setToken: (token: string) => localStorage.setItem('nc_token', token),
   removeToken: () => localStorage.removeItem('nc_token'),
-  getHeaders: () => {
-    const key = (import.meta as any).env.VITE_NC_API_KEY || 'nc-app-e3b6ec1a8ef2811b5f769af324153d5c439dfa3a4fff4041';
-    return {
-      'Content-Type': 'application/json',
-      'X-API-Key': key
-    };
-  },
+  getApiKey: () => (import.meta as any).env.VITE_NC_API_KEY || 'nc-app-e3b6ec1a8ef2811b5f769af324153d5c439dfa3a4fff4041',
 
   sql: async (query: string) => {
-    const key = (import.meta as any).env.VITE_NC_API_KEY || 'nc-app-e3b6ec1a8ef2811b5f769af324153d5c439dfa3a4fff4041';
-    const res = await fetch(`${BASE_URL}/sql`, {
+    const key = api.getApiKey();
+    const res = await fetch(`${BASE_URL}/sql?api_key=${key}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-API-Key': key
       },
       body: JSON.stringify({ sql: query })
     });
     const data = await res.json();
     if (!res.ok || !data.success) {
-      const errorMsg = data.error || 'SQL execution failed';
-      if (errorMsg.includes('Invalid API key')) {
-        throw new Error(`API Key Error: ${errorMsg}. Key used: ${key.substring(0, 10)}...`);
-      }
-      throw new Error(errorMsg);
+      throw new Error(data.error || 'SQL execution failed');
     }
     
     // Process results to parse JSON strings
