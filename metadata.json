@@ -1,0 +1,5 @@
+{
+  "name": "BUNKER-255 • Dashboard",
+  "description": "Client control panel for BUNKER-255 services. SOS management, business profile, and system status.",
+  "requestFramePermissions": []
+}
