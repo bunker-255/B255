@@ -1,5 +1,5 @@
 {
-  "name": "BUNKER-255 • Dashboard",
-  "description": "Client control panel for BUNKER-255 services. SOS management, business profile, and system status.",
+  "name": "BUNKER-255 + qr",
+  "description": "Bunker-255 \n+ blog\n+ invoiceGen\n+ qrGen",
   "requestFramePermissions": []
 }

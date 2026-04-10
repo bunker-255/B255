@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://bunker-255.com/sitemap.xml
+Host: https://bunker-255.com

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { api } from '../lib/api';
+import { submitContactForm } from '../lib/supabase';
 import { useLanguage } from '../lib/LanguageContext';
 
 export const Contact: React.FC = () => {
@@ -17,13 +17,12 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    try {
-        await api.records.create('contact_requests', formData);
-        setStatus('success');
-    } catch (error) {
-        console.error('Error submitting form:', error);
-        setStatus('error');
-    }
+    // Simulate API call using helper from lib/supabase
+    const result = await submitContactForm(formData);
+    setTimeout(() => {
+        if(result.success) setStatus('success');
+        else setStatus('error');
+    }, 1000);
   };
 
   return (
@@ -43,7 +42,7 @@ export const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-white mb-1">Email</h3>
-                <p className="text-slate-400 break-all">bunker255il@gmail.com</p>
+                <p className="text-slate-400 break-all">admin@bunker-255.com</p>
               </div>
             </div>
             
@@ -102,7 +101,6 @@ export const Contact: React.FC = () => {
                 >
                     <option value="consultation">{t.contact.form.types.consultation}</option>
                     <option value="development">{t.contact.form.types.dev}</option>
-                    <option value="training">{t.contact.form.types.training}</option>
                     <option value="investors">{t.contact.form.types.invest}</option>
                 </select>
                 </div>

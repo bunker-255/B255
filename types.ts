@@ -1,3 +1,4 @@
+
 import { LucideIcon } from 'lucide-react';
 
 export type Language = 'en' | 'he' | 'ru';
@@ -19,11 +20,6 @@ export interface CaseStudy {
   image: string;
 }
 
-export interface Course {
-  id: string;
-  levelKey: string;
-}
-
 export interface TeamMember {
   id: string;
   image: string;
@@ -32,4 +28,16 @@ export interface TeamMember {
 export interface Partner {
   id: string;
   logo: string;
+}
+
+export interface BlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string; // HTML string
+  image_url: string;
+  created_at: string;
+  is_published: boolean;
+  category?: string;
 }

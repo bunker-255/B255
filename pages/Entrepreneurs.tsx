@@ -28,7 +28,7 @@ export const Entrepreneurs: React.FC = () => {
              </div>
              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-green transition-colors">{t.entrepreneurs.options.startups.title}</h3>
              <p className="text-slate-400 text-sm mb-8 flex-grow leading-relaxed font-mono">{t.entrepreneurs.options.startups.desc}</p>
-             <Link to="/ideas" className="w-full py-4 border border-neon-green text-neon-green font-bold font-mono tracking-widest hover:bg-neon-green hover:text-bunker-950 transition-all uppercase text-xs text-center">
+             <Link to="/contact" className="w-full py-4 border border-neon-green text-neon-green font-bold font-mono tracking-widest hover:bg-neon-green hover:text-bunker-950 transition-all uppercase text-xs text-center">
                 {t.entrepreneurs.buttons.discuss}
              </Link>
           </div>
@@ -40,7 +40,7 @@ export const Entrepreneurs: React.FC = () => {
              </div>
              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">{t.entrepreneurs.options.equity.title}</h3>
              <p className="text-slate-400 text-sm mb-8 flex-grow leading-relaxed font-mono">{t.entrepreneurs.options.equity.desc}</p>
-             <Link to="/contact" className="w-full py-4 border border-neon-cyan text-neon-cyan font-bold font-mono tracking-widest hover:bg-neon-cyan hover:text-bunker-950 transition-all uppercase text-xs text-center">
+             <Link to="/ideas" className="w-full py-4 border border-neon-cyan text-neon-cyan font-bold font-mono tracking-widest hover:bg-neon-cyan hover:text-bunker-950 transition-all uppercase text-xs text-center">
                 {t.entrepreneurs.buttons.invest}
              </Link>
           </div>

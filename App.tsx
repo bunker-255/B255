@@ -1,102 +1,46 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { AuthProvider, useAuth } from './lib/AuthContext';
-import { LanguageProvider } from './lib/LanguageContext';
-
-// Pages
-import { Login } from './pages/Login';
-import { Register } from './pages/Register';
-import { Dashboard } from './pages/Dashboard';
-import { SOS } from './pages/SOS';
-import { Profile } from './pages/Profile';
-import { Admin } from './pages/Admin';
 import { Home } from './pages/Home';
 import { Services } from './pages/Services';
-import { Training } from './pages/Training';
-import { Cases } from './pages/Cases';
-import { Contact } from './pages/Contact';
+import { ServiceDetail } from './pages/ServiceDetail';
 import { About } from './pages/About';
-import { Investors } from './pages/Investors';
 import { Entrepreneurs } from './pages/Entrepreneurs';
-import { Ideas } from './pages/Ideas';
+import { Contact } from './pages/Contact';
 import { Tools } from './pages/Tools';
-
-const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { user, loading } = useAuth();
-  
-  if (loading) {
-      return (
-          <div className="min-h-screen bg-bunker-950 flex items-center justify-center">
-              <div className="text-neon-green font-mono text-sm animate-pulse tracking-widest">
-                  INITIALIZING_SECURE_CONNECTION...
-              </div>
-          </div>
-      );
-  }
-  
-  if (!user) return <Navigate to="/login" replace />;
-  return <>{children}</>;
-};
-
-const AdminRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const { user, loading } = useAuth();
-    const ADMIN_EMAIL = 'admin@bunker-255.com';
-
-    if (loading) return null;
-
-    // Check against user email from custom table
-    if (!user || user.email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
-        return <Navigate to="/" replace />;
-    }
-
-    return <>{children}</>;
-};
-
-const PublicRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { user, loading } = useAuth();
-  if (!loading && user) return <Navigate to="/" replace />;
-  return <>{children}</>;
-};
+import { InvoiceGen } from './pages/InvoiceGen';
+import { QrGen } from './pages/QrGen';
+import { Ideas } from './pages/Ideas';
+import { Investors } from './pages/Investors';
+import { Blog } from './pages/Blog';
+import { BlogPost } from './pages/BlogPost';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 const App: React.FC = () => {
   return (
-    <AuthProvider>
-      <LanguageProvider>
-        <Router>
-          <Layout>
-            <Routes>
-              {/* Auth Routes */}
-              <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
-              <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
-
-              {/* Public Pages */}
-              <Route path="/home" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/training" element={<Training />} />
-              <Route path="/cases" element={<Cases />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/investors" element={<Investors />} />
-              <Route path="/entrepreneurs" element={<Entrepreneurs />} />
-              <Route path="/ideas" element={<Ideas />} />
-              
-              {/* Protected Routes */}
-              <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-              <Route path="/sos" element={<ProtectedRoute><SOS /></ProtectedRoute>} />
-              <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
-              <Route path="/tools" element={<ProtectedRoute><Tools /></ProtectedRoute>} />
-
-              {/* Admin Route */}
-              <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />
-
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </Layout>
-        </Router>
-      </LanguageProvider>
-    </AuthProvider>
+    <ErrorBoundary>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />
+            <Route path="/tools" element={<Tools />} />
+            <Route path="/tools/invoice-gen" element={<InvoiceGen />} />
+            <Route path="/tools/qr-gen" element={<QrGen />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/entrepreneurs" element={<Entrepreneurs />} />
+            <Route path="/investors" element={<Investors />} />
+            <Route path="/ideas" element={<Ideas />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </ErrorBoundary>
   );
 };
 
