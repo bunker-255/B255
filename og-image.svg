@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="100%" height="100%" fill="#020203"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3"/>
+  <g transform="translate(490, 150)">
+    <path d="M 20 0 H 220 V 200 L 200 220 H 0 V 20 Z" fill="#020203" stroke="#00ffa3" stroke-width="8"/>
+    <text x="110" y="145" dominant-baseline="middle" text-anchor="middle" fill="#00ffa3" font-family="sans-serif" font-weight="bold" font-size="140">B</text>
+  </g>
+  <text x="600" y="480" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="60" letter-spacing="10">BUNKER<tspan fill="#00ffa3">-255</tspan></text>
+</svg>

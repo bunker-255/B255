@@ -1,0 +1,17 @@
+{
+  "name": "BUNKER-255 Laboratory",
+  "short_name": "BUNKER-255",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020203",
+  "theme_color": "#020203",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/og-image.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

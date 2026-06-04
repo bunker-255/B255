@@ -1,0 +1,5 @@
+{
+  "name": "BUNKER-255 (with mobile ver)",
+  "description": "Bunker-255 \n+ blog\n+ invoiceGen\n+ qrGen",
+  "requestFramePermissions": []
+}
