@@ -67,6 +67,17 @@ const Header: React.FC = () => {
   const { t, dir } = useLanguage();
   const isRtl = dir === 'rtl';
 
+  const isActive = (path: string) => {
+    if (path.startsWith('http')) return false;
+    const pathWithoutLang = location.pathname.replace(/^\/(en|ru|he)/, '') || '/';
+    return pathWithoutLang === path;
+  };
+
+  const isPathPrefix = (prefix: string) => {
+    const pathWithoutLang = location.pathname.replace(/^\/(en|ru|he)/, '') || '/';
+    return pathWithoutLang.startsWith(prefix);
+  };
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
@@ -129,11 +140,11 @@ const Header: React.FC = () => {
               key={item.id}
               to={item.path}
               className={`relative px-1.5 md:px-2 xl:px-4 py-2 text-[9px] md:text-[10px] xl:text-[11px] font-mono uppercase tracking-normal xl:tracking-widest transition-all hover:text-neon-green whitespace-nowrap ${
-                location.pathname === item.path ? 'text-white' : 'text-slate-400'
+                isActive(item.path) ? 'text-white' : 'text-slate-400'
               }`}
             >
                {/* Active Indicator */}
-               {location.pathname === item.path && (
+               {isActive(item.path) && (
                   <span className="absolute bottom-1 left-2 xl:left-4 right-2 xl:right-4 h-px bg-neon-green shadow-[0_0_8px_#00ffa3]"></span>
                )}
                <span className="relative z-10">
@@ -222,7 +233,7 @@ const Header: React.FC = () => {
                         key={item.id}
                         to={item.path}
                         className={`group flex items-center justify-between px-6 py-3 border-b border-white/5 text-xs font-mono uppercase tracking-wider transition-all hover:bg-white/5 ${
-                            location.pathname === item.path ? 'text-white bg-white/5' : 'text-slate-400'
+                            isActive(item.path) ? 'text-white bg-white/5' : 'text-slate-400'
                         }`}
                     >
                         <div className="flex items-center gap-3">
@@ -230,8 +241,8 @@ const Header: React.FC = () => {
                             {/* @ts-ignore */}
                             {navData[item.id]}
                         </div>
-                        {location.pathname === item.path && <div className="w-1.5 h-1.5 bg-neon-green rounded-full shadow-[0_0_8px_#00ffa3]"></div>}
-                        {location.pathname !== item.path && (
+                        {isActive(item.path) && <div className="w-1.5 h-1.5 bg-neon-green rounded-full shadow-[0_0_8px_#00ffa3]"></div>}
+                        {!isActive(item.path) && (
                             <ChevronRight 
                                 size={14} 
                                 className={`opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-neon-green ${isRtl ? 'rotate-180' : ''}`} 
@@ -261,26 +272,26 @@ const Header: React.FC = () => {
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-bunker-900/95 backdrop-blur-md border-t border-white/10" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
       <div className="h-16 flex items-center justify-around px-2">
           {/* Tools */}
-          <Link to="/tools" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${location.pathname.startsWith('/tools') ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
+          <Link to="/tools" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${isPathPrefix('/tools') ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
             <Wrench size={20} />
             <span className="text-[9px] mt-1 font-mono">{navData.tools || 'Tools'}</span>
           </Link>
           
           {/* Services */}
-          <Link to="/services" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${location.pathname.startsWith('/services') ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
+          <Link to="/services" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${isPathPrefix('/services') ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
             <Cpu size={20} />
             <span className="text-[9px] mt-1 font-mono">{navData.services || 'Services'}</span>
           </Link>
           
           {/* Central 'B' Button (Home) */}
           <div className="relative flex items-center justify-center w-20 h-16">
-              <Link to="/" className={`absolute -top-3 w-16 h-16 bg-bunker-950 border-[3px] rounded-full flex items-center justify-center shadow-lg transition-all ${location.pathname === '/' ? 'border-neon-green shadow-[0_0_20px_rgba(0,255,163,0.4)]' : 'border-[#2a2a36] hover:border-white/30'}`}>
+              <Link to="/" className={`absolute -top-3 w-16 h-16 bg-bunker-950 border-[3px] rounded-full flex items-center justify-center shadow-lg transition-all ${isActive('/') ? 'border-neon-green shadow-[0_0_20px_rgba(0,255,163,0.4)]' : 'border-[#2a2a36] hover:border-white/30'}`}>
                  <span className="font-tech text-neon-green font-bold text-3xl pb-1">B</span>
               </Link>
           </div>
 
           {/* CLI Tools */}
-          <Link to="/cli-tools" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${location.pathname === '/cli-tools' ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
+          <Link to="/cli-tools" className={`flex flex-col items-center justify-center w-12 h-12 transition-colors ${isActive('/cli-tools') ? 'text-neon-green' : 'text-slate-400 hover:text-white'}`}>
             <Terminal size={20} />
             <span className="text-[9px] mt-1 font-mono">{navData.cliTools || 'CLI'}</span>
           </Link>
