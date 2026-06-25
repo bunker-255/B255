@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bunker-255.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://bunker-255.com/en</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -14,6 +25,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -23,15 +35,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/services"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/services"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bunker-255.com/en/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/services"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/services"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/services"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -41,6 +65,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/services"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/services"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/services"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -50,6 +75,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/services"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/services"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/services"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/tools</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -59,6 +95,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -68,6 +105,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -77,15 +115,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/about"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bunker-255.com/en/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/about"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/about"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -95,6 +145,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/about"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/about"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -104,6 +155,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/about"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/about"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/about"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/contact"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -113,6 +175,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/contact"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/contact"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -122,6 +185,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/contact"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/contact"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -131,15 +195,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/contact"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/contact"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/blog"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/blog"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bunker-255.com/en/blog</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/blog"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/blog"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -149,6 +225,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/blog"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/blog"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -158,15 +235,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/blog"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/blog"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/entrepreneurs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/entrepreneurs"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bunker-255.com/en/entrepreneurs</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/entrepreneurs"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -176,6 +265,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/entrepreneurs"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -185,6 +275,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/entrepreneurs"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/entrepreneurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/entrepreneurs"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/investors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/investors"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/investors"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/investors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/investors"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -194,6 +295,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/investors"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/investors"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/investors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/investors"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -203,6 +305,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/investors"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/investors"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/investors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/investors"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -212,6 +315,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/investors"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/investors"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/investors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/investors"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/ideas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/ideas"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/ideas"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/ideas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/ideas"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -221,6 +335,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/ideas"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/ideas"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/ideas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/ideas"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -230,6 +345,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/ideas"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/ideas"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/ideas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/ideas"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -239,6 +355,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/ideas"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/ideas"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/ideas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/ideas"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/tools/invoice-gen</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/invoice-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -248,6 +375,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/invoice-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -257,6 +385,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/invoice-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -266,6 +395,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/invoice-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/invoice-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/invoice-gen"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/tools/qr-gen</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/qr-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -275,6 +415,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/qr-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -284,6 +425,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/qr-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -293,15 +435,67 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/tools/qr-gen"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/tools/qr-gen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/tools/qr-gen"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/cases</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/cases"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/cases"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/cases"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/en/cases</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/cases"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/cases"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/cases"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/ru/cases</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/cases"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/cases"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/cases"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/he/cases</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/cases"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/cases"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/cases"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/terms"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/terms"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bunker-255.com/en/terms</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/terms"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/terms"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/terms"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -311,6 +505,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/terms"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/terms"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/terms"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -320,6 +515,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/terms"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/terms"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/terms"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/privacy"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -329,6 +535,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/privacy"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/privacy"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -338,6 +545,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/privacy"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/privacy"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -347,6 +555,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/privacy"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/privacy"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bunker-255.com/refunds</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/refunds"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/refunds"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/refunds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/refunds"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -356,6 +575,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/refunds"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/refunds"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/refunds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/refunds"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -365,6 +585,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/refunds"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/refunds"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/refunds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/refunds"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -374,6 +595,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bunker-255.com/en/refunds"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://bunker-255.com/ru/refunds"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://bunker-255.com/he/refunds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bunker-255.com/refunds"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
