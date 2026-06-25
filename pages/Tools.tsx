@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { Waves, ExternalLink, Wrench, Activity, FileText, QrCode } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import { SEO } from '../components/SEO';

@@ -10,7 +10,7 @@ import QRCodeStyling, {
   CornerDotType,
 } from 'qr-code-styling';
 import { Download, Image as ImageIcon, QrCode, Settings2, Palette, Type, Upload, Trash2, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { useLanguage } from '../lib/LanguageContext';
 import { SEO } from '../components/SEO';
 

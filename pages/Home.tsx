@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { ArrowRight, Siren, Wrench, ShieldAlert, Waves, ExternalLink, Activity, GraduationCap, FileText, QrCode } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import { ServicesCarousel } from '../components/ServicesCarousel';

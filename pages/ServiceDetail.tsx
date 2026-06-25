@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { ArrowLeft, CheckCircle2, Zap, Shield, Cpu, ArrowRight, Siren } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import { SERVICES_LIST } from '../constants';

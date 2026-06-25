@@ -8,6 +8,7 @@ interface LanguageContextType {
   setLanguage: (lang: Language) => void;
   t: typeof translations['ru'];
   dir: 'ltr' | 'rtl';
+  isRtl: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -70,7 +71,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     language,
     setLanguage,
     t: t as typeof translations['ru'], // Casting ensures TS is happy
-    dir: language === 'he' ? 'rtl' : 'ltr' as 'ltr' | 'rtl'
+    dir: language === 'he' ? 'rtl' : 'ltr' as 'ltr' | 'rtl',
+    isRtl: language === 'he'
   };
 
   return (

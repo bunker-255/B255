@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { SEO } from '../components/SEO';
 import { Printer, Plus, Trash2, ArrowRight, Building2, UserCircle, FileText, ListPlus, Settings2, ChevronDown, ChevronUp } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 
 interface InvoiceItem {
   id: string;

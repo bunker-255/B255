@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { Lightbulb, Globe } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 
 export const Entrepreneurs: React.FC = () => {
   const { t } = useLanguage();

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { LocalizedLink as Link } from './LocalizedLink';
 import { Menu, X, Linkedin, Facebook, MessageCircle, Phone, Mail, Globe, Zap, ChevronRight, Terminal, ExternalLink, Home, Cpu, Wrench } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { useLanguage } from '../lib/LanguageContext';
@@ -297,7 +298,7 @@ const Header: React.FC = () => {
 };
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   const SOCIAL_LINKS = [
     { icon: Linkedin, href: 'https://linkedin.com/company/bunker-255' },
@@ -424,10 +425,17 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600 gap-4 font-mono uppercase tracking-wider">
-          <p className="text-center md:text-left">© 2025 BUNKER-255 LABS. <span className="text-neon-green">SYSTEM SECURE</span></p>
+          <p className="text-center md:text-left">© 2026 BUNKER-255 LABS. <span className="text-neon-green">SYSTEM SECURE</span></p>
           <div className="flex space-x-6 rtl:space-x-reverse">
-            <Link to="/" className="hover:text-slate-300 transition-colors">Privacy</Link>
-            <Link to="/" className="hover:text-slate-300 transition-colors">Terms</Link>
+            <Link to="/privacy" className="hover:text-slate-300 transition-colors">
+              {language === 'ru' ? 'Конфиденциальность' : language === 'he' ? 'פרטיות' : 'Privacy'}
+            </Link>
+            <Link to="/terms" className="hover:text-slate-300 transition-colors">
+              {language === 'ru' ? 'Условия' : language === 'he' ? 'תנאים' : 'Terms'}
+            </Link>
+            <Link to="/refunds" className="hover:text-slate-300 transition-colors">
+              {language === 'ru' ? 'Возвраты' : language === 'he' ? 'החזרים' : 'Refunds'}
+            </Link>
           </div>
         </div>
       </div>

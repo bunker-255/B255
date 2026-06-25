@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { BlogPost } from '../types';
 import { useLanguage } from '../lib/LanguageContext';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { FileText, ArrowRight, Loader } from 'lucide-react';
 
 export const Blog: React.FC = () => {

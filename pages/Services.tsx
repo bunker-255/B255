@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Zap, Siren } from 'lucide-react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { useLanguage } from '../lib/LanguageContext';
 import { SERVICES_LIST } from '../constants';
 import { SEO } from '../components/SEO';

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { supabase } from '../lib/supabase';
 import { BlogPost as BlogPostType } from '../types';
 import { useLanguage } from '../lib/LanguageContext';

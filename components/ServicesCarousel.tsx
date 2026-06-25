@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { SERVICES_LIST } from '../constants';
 import { ArrowRight, Zap, Siren } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from './LocalizedLink';
 
 export const ServicesCarousel: React.FC = () => {
   const { t, language } = useLanguage();

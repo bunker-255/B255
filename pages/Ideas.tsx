@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { Unlock, Database, ArrowRight, Code, Server, Smartphone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 
 export const Ideas: React.FC = () => {
   const { t } = useLanguage();

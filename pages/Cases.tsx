@@ -2,7 +2,7 @@
 import React from 'react';
 import { CASES_LIST } from '../constants';
 import { ArrowUpRight, Database, FolderOpen } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '../components/LocalizedLink';
 import { useLanguage } from '../lib/LanguageContext';
 
 export const Cases: React.FC = () => {
