@@ -79,7 +79,9 @@ const subdomains = [
     ['https://academy.bunker-255.com/', 'weekly', '0.9'],
     ['https://dashboard.bunker-255.com/', 'monthly', '0.8'],
     ['https://redguard.bunker-255.com/', 'weekly', '0.9'],
-    ['https://surf.bunker-255.com/', 'weekly', '0.9']
+    ['https://surf.bunker-255.com/', 'weekly', '0.9'],
+    ['https://sun.bunker-255.com/', 'weekly', '0.9'],
+    ['https://site.bunker-255.com/', 'weekly', '0.9']
 ];
 
 xml.push('  <!-- Ecosystem Subdomains -->');

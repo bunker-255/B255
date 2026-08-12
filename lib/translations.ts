@@ -287,6 +287,8 @@ export const translations = {
       },
       items: {
         wavesil: { title: 'WaveSIL', status: 'Beta', desc: 'Инструмент анализа состояния моря и прогнозирования волн.' },
+        sun: { title: 'SunBunker', status: 'New', desc: 'Инструмент для отдыха и развлечений: трекер солнца, погоды, пляжного отдыха и морского досуга.' },
+        siteConveyor: { title: 'Конвейер сайтов', status: 'Hot', desc: 'Быстрее и выгоднее, чем вайб-кодинг. Передайте сайт на наш конвейер — готовый проект за копейки за 48 часов.' },
         invoiceGen: { title: 'InvoiceGen', status: 'Active', desc: 'Генератор квитанций и инвойсов с поддержкой иврита.' },
         qrGen: { title: 'QRGen', status: 'Active', desc: 'Генератор красивых QR-кодов с логотипом и градиентами.' }
       }
@@ -667,6 +669,8 @@ export const translations = {
       },
       items: {
         wavesil: { title: 'WaveSIL', status: 'Beta', desc: 'Sea condition analysis and wave forecasting tool.' },
+        sun: { title: 'SunBunker', status: 'New', desc: 'Leisure, beach & weather tool: sun, UV, sea activity and outdoor comfort tracker.' },
+        siteConveyor: { title: 'Site Conveyor', status: 'Hot', desc: 'Easier & cheaper than vibe-coding. Delegate web dev to our automated conveyor — 48h turnaround at unbeatable prices.' },
         invoiceGen: { title: 'InvoiceGen', status: 'Active', desc: 'Invoice and receipt generator with Hebrew support.' },
         qrGen: { title: 'QRGen', status: 'Active', desc: 'Beautiful QR code generator with logo and gradients support.' }
       }
@@ -1047,6 +1051,8 @@ export const translations = {
       },
       items: {
         wavesil: { title: 'WaveSIL', status: 'בטא', desc: 'כלי לניתוח תנאי ים וחיזוי גלים.' },
+        sun: { title: 'SunBunker', status: 'חדש', desc: 'כלי לנופש ופנאי: מעקב שמש, מזג אוויר ותנאי חוף למטיילים ושוחים.' },
+        siteConveyor: { title: 'פס ייצור אתרים', status: 'HOT', desc: 'פשוט וזול יותר מווייב-קודינג. העבר את האתר לפס הייצור שלנו — מוכן תוך 48 שעות במחיר סמלי.' },
         invoiceGen: { title: 'InvoiceGen', status: 'פעיל', desc: 'מחולל חשבוניות וקבלות עם תמיכה מלאה בעברית.' },
         qrGen: { title: 'QRGen', status: 'פעיל', desc: 'מחולל קודי QR מעוצבים עם תמיכה בלוגו וגרדיאנטים.' }
       }

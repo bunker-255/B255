@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { LocalizedLink as Link } from '../components/LocalizedLink';
-import { Waves, ExternalLink, Wrench, Activity, FileText, QrCode } from 'lucide-react';
+import { Waves, ExternalLink, Wrench, Activity, FileText, QrCode, Sun, Workflow, Sparkles } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import { SEO } from '../components/SEO';
 
@@ -23,6 +23,26 @@ export const Tools: React.FC = () => {
         "url": "https://surf.bunker-255.com",
         // @ts-ignore
         "description": t.tools.items.wavesil.desc
+      },
+      {
+        "@type": "SoftwareApplication",
+        // @ts-ignore
+        "name": t.tools.items.sun.title,
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Web",
+        "url": "https://sun.bunker-255.com",
+        // @ts-ignore
+        "description": t.tools.items.sun.desc
+      },
+      {
+        "@type": "SoftwareApplication",
+        // @ts-ignore
+        "name": t.tools.items.siteConveyor.title,
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "url": "https://site.bunker-255.com",
+        // @ts-ignore
+        "description": t.tools.items.siteConveyor.desc
       },
       {
         "@type": "SoftwareApplication",
@@ -61,6 +81,34 @@ export const Tools: React.FC = () => {
       theme: 'cyan',
       link: 'https://surf.bunker-255.com',
       category: 'entertainment'
+    },
+    {
+      id: 'sun',
+      // @ts-ignore
+      title: t.tools.items.sun.title,
+      // @ts-ignore
+      desc: t.tools.items.sun.desc,
+      // @ts-ignore
+      status: t.tools.items.sun.status,
+      icon: Sun,
+      categoryIcon: Sun,
+      theme: 'amber',
+      link: 'https://sun.bunker-255.com',
+      category: 'entertainment'
+    },
+    {
+      id: 'siteConveyor',
+      // @ts-ignore
+      title: t.tools.items.siteConveyor.title,
+      // @ts-ignore
+      desc: t.tools.items.siteConveyor.desc,
+      // @ts-ignore
+      status: t.tools.items.siteConveyor.status,
+      icon: Workflow,
+      categoryIcon: Workflow,
+      theme: 'neon-green',
+      link: 'https://site.bunker-255.com',
+      category: 'business'
     },
     {
       id: 'invoiceGen',
@@ -146,21 +194,29 @@ export const Tools: React.FC = () => {
       {/* Tools Grid - DENSE (8 cols on LG) */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-4">
         {filteredTools.map((tool) => {
-          const getThemeClasses = (category: string) => {
-            switch (category) {
+          const getThemeClasses = (toolItem: typeof tool) => {
+            if (toolItem.theme === 'amber') {
+              return {
+                color: 'text-amber-400',
+                border: 'border-amber-400',
+                bg: 'bg-amber-400',
+                hoverBorder: 'group-hover:border-amber-400'
+              };
+            }
+            switch (toolItem.category) {
               case 'business':
                 return {
-                  color: 'text-purple-500',
-                  border: 'border-purple-500',
-                  bg: 'bg-purple-500',
-                  hoverBorder: 'group-hover:border-purple-500'
+                  color: 'text-purple-400',
+                  border: 'border-purple-400',
+                  bg: 'bg-purple-400',
+                  hoverBorder: 'group-hover:border-purple-400'
                 };
               case 'entertainment':
                 return {
-                  color: 'text-cyan-500',
-                  border: 'border-cyan-500',
-                  bg: 'bg-cyan-500',
-                  hoverBorder: 'group-hover:border-cyan-500'
+                  color: 'text-cyan-400',
+                  border: 'border-cyan-400',
+                  bg: 'bg-cyan-400',
+                  hoverBorder: 'group-hover:border-cyan-400'
                 };
               default:
                 return {
@@ -172,7 +228,7 @@ export const Tools: React.FC = () => {
             }
           };
 
-          const theme = getThemeClasses(tool.category || '');
+          const theme = getThemeClasses(tool);
           const themeColor = theme.color;
           const themeBorder = theme.border;
           const themeBg = theme.bg;

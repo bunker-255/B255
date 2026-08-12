@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { LocalizedLink as Link } from '../components/LocalizedLink';
-import { ArrowRight, Siren, Wrench, ShieldAlert, Waves, ExternalLink, Activity, GraduationCap, FileText, QrCode } from 'lucide-react';
+import { ArrowRight, Siren, Wrench, ShieldAlert, Waves, ExternalLink, Activity, GraduationCap, FileText, QrCode, Sun, Workflow, Sparkles } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
 import { ServicesCarousel } from '../components/ServicesCarousel';
 import { SEO } from '../components/SEO';
@@ -62,6 +62,18 @@ export const Home: React.FC = () => {
                 "description": "Sea condition analysis and wave forecasting tool."
             },
             {
+                "@type": "SoftwareApplication",
+                "name": "SunBunker",
+                "url": "https://sun.bunker-255.com",
+                "description": "Sun, weather & beach leisure tool."
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "Site Conveyor",
+                "url": "https://site.bunker-255.com",
+                "description": "Automated website assembly line for developers and agencies."
+            },
+            {
                 "@type": "Organization",
                 "name": "BUNKER Dashboard",
                 "url": "https://dashboard.bunker-255.com",
@@ -87,6 +99,34 @@ export const Home: React.FC = () => {
       theme: 'cyan',
       link: 'https://surf.bunker-255.com',
       category: 'entertainment'
+    },
+    {
+      id: 'sun',
+      // @ts-ignore
+      title: t.tools.items.sun.title,
+      // @ts-ignore
+      desc: t.tools.items.sun.desc,
+      // @ts-ignore
+      status: t.tools.items.sun.status,
+      icon: Sun,
+      categoryIcon: Sun,
+      theme: 'amber',
+      link: 'https://sun.bunker-255.com',
+      category: 'entertainment'
+    },
+    {
+      id: 'siteConveyor',
+      // @ts-ignore
+      title: t.tools.items.siteConveyor.title,
+      // @ts-ignore
+      desc: t.tools.items.siteConveyor.desc,
+      // @ts-ignore
+      status: t.tools.items.siteConveyor.status,
+      icon: Workflow,
+      categoryIcon: Workflow,
+      theme: 'neon-green',
+      link: 'https://site.bunker-255.com',
+      category: 'business'
     },
     {
       id: 'invoiceGen',
@@ -197,6 +237,86 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Site Conveyor Showcase Banner Section */}
+      <section className="py-16 md:py-24 bg-bunker-950 border-t border-white/10 relative overflow-hidden">
+        {/* Glow Effects */}
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-neon-green/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-[0.07] pointer-events-none"></div>
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="bg-gradient-to-br from-bunker-900 via-bunker-900/90 to-bunker-950 border border-neon-green/30 rounded-2xl p-6 md:p-12 relative overflow-hidden shadow-[0_0_50px_rgba(0,255,163,0.08)]">
+            {/* Top Badge & Corner Accent */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-neon-green/5 rounded-bl-full border-b border-l border-neon-green/20 pointer-events-none"></div>
+
+            <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+              
+              {/* Conveyor Info */}
+              <div className="flex flex-col items-center w-full">
+                <div className="w-full flex flex-col items-center">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neon-green/10 border border-neon-green/30 text-neon-green font-mono text-xs font-bold uppercase tracking-widest mb-6">
+                    <Workflow className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: '6s' }} />
+                    <span>{isHe ? 'למפתחים וסוכנויות' : isRu ? 'ДЛЯ РАЗРАБОТЧИКОВ И АГЕНТСТВ' : 'FOR DEVELOPERS & AGENCIES'}</span>
+                  </div>
+
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-tech font-bold text-white mb-4 leading-tight">
+                    {isHe ? (
+                      <>פס ייצור אתרים <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-emerald-400">BUNKER-255</span></>
+                    ) : isRu ? (
+                      <>Конвейер Сайтов <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-emerald-400">BUNKER-255</span></>
+                    ) : (
+                      <>BUNKER-255 <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-emerald-400">Site Conveyor</span></>
+                    )}
+                  </h2>
+
+                  <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto font-light">
+                    {isHe 
+                      ? 'פשוט, מהיר וזול יותר מווייב-קודינג. אל תבזבזו שבועות על פרומפטים ושינויים אינסופיים. מעבירים את הפרויקט לפס הייצור הטכנולוגי שלנו — ומקבלים אתר מוכן ונקי תוך 48 שעות במחיר סמלי.'
+                      : isRu 
+                      ? 'Проще, быстрее и выгоднее, чем вайб-кодинг. Забудьте про недели бесконечных промптов и правки. Передайте задачу на наш производственный конвейер — и получите готовый, протестированный сайт за копейки за 48 часов.'
+                      : 'Easier, faster & cheaper than vibe-coding. Stop wasting weeks wrestling with raw prompt loops. Delegate your web build to our automated assembly line — and receive a clean, production-ready site in 48 hours at a fraction of the cost.'
+                    }
+                  </p>
+
+                  {/* Feature Highlights Grid */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 font-mono text-xs w-full max-w-3xl">
+                    <div className="bg-bunker-950/80 border border-white/10 rounded-lg p-3 text-center">
+                      <div className="text-neon-green font-bold text-lg mb-1">48h</div>
+                      <div className="text-slate-400 text-[10px] uppercase">{isHe ? 'זמן מסירה' : isRu ? 'Срок релиза' : 'Turnaround'}</div>
+                    </div>
+                    <div className="bg-bunker-950/80 border border-white/10 rounded-lg p-3 text-center">
+                      <div className="text-purple-400 font-bold text-lg mb-1">$-$$</div>
+                      <div className="text-slate-400 text-[10px] uppercase">{isHe ? 'מחיר סמלי' : isRu ? 'За копейки' : 'Low Cost'}</div>
+                    </div>
+                    <div className="bg-bunker-950/80 border border-white/10 rounded-lg p-3 text-center">
+                      <div className="text-cyan-400 font-bold text-lg mb-1">100%</div>
+                      <div className="text-slate-400 text-[10px] uppercase">{isHe ? 'קוד נקי' : isRu ? 'Чистый код' : 'Clean Code'}</div>
+                    </div>
+                    <div className="bg-bunker-950/80 border border-white/10 rounded-lg p-3 text-center">
+                      <div className="text-amber-400 font-bold text-lg mb-1">Dev & B2B</div>
+                      <div className="text-slate-400 text-[10px] uppercase">{isHe ? 'לסוכנויות' : isRu ? 'Для агентств' : 'Agencies'}</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-4 pt-2 w-full">
+                  <a 
+                    href="https://site.bunker-255.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="px-8 py-4 bg-neon-green text-bunker-950 font-bold font-mono text-xs uppercase tracking-widest clip-corner hover:bg-white transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(0,255,163,0.3)]"
+                  >
+                    <span>{isHe ? 'הפעל את פס הייצור' : isRu ? 'Запустить сайт на конвейер' : 'Launch Site Conveyor'}</span>
+                    <ExternalLink size={14} />
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tools Section (New) */}
       <section className="py-20 bg-bunker-900 border-t border-white/5 relative">
         <div className="absolute inset-0 bg-dots-pattern opacity-5 pointer-events-none"></div>
@@ -220,21 +340,29 @@ export const Home: React.FC = () => {
             {/* Tools Grid - Strict Square Layout (Dense for Desktop) */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-4">
                 {toolsList.map((tool) => {
-                    const getThemeClasses = (category: string) => {
-                      switch (category) {
+                    const getThemeClasses = (toolItem: typeof tool) => {
+                      if (toolItem.theme === 'amber') {
+                        return {
+                          color: 'text-amber-400',
+                          border: 'border-amber-400',
+                          bg: 'bg-amber-400',
+                          hoverBorder: 'group-hover:border-amber-400'
+                        };
+                      }
+                      switch (toolItem.category) {
                         case 'business':
                           return {
-                            color: 'text-purple-500',
-                            border: 'border-purple-500',
-                            bg: 'bg-purple-500',
-                            hoverBorder: 'group-hover:border-purple-500'
+                            color: 'text-purple-400',
+                            border: 'border-purple-400',
+                            bg: 'bg-purple-400',
+                            hoverBorder: 'group-hover:border-purple-400'
                           };
                         case 'entertainment':
                           return {
-                            color: 'text-cyan-500',
-                            border: 'border-cyan-500',
-                            bg: 'bg-cyan-500',
-                            hoverBorder: 'group-hover:border-cyan-500'
+                            color: 'text-cyan-400',
+                            border: 'border-cyan-400',
+                            bg: 'bg-cyan-400',
+                            hoverBorder: 'group-hover:border-cyan-400'
                           };
                         default:
                           return {
@@ -246,7 +374,7 @@ export const Home: React.FC = () => {
                       }
                     };
           
-                    const theme = getThemeClasses(tool.category || '');
+                    const theme = getThemeClasses(tool);
                     const themeColor = theme.color;
                     const themeBorder = theme.border;
                     const themeBg = theme.bg;
