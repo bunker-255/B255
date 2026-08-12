@@ -16,12 +16,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>(() => {
     try {
-      const savedLang = typeof window !== 'undefined' ? localStorage.getItem('language') as Language : null;
-      if (savedLang && ['en', 'he', 'ru'].includes(savedLang)) {
-        return savedLang;
-      }
-      // Prioritize Hebrew if browser is Hebrew, but otherwise default to Hebrew anyway for this site
-      if (typeof navigator !== 'undefined') {
+      if (typeof window !== 'undefined') {
+        const pathLang = window.location.pathname.split('/')[1];
+        if (pathLang && ['en', 'he', 'ru'].includes(pathLang)) {
+          return pathLang as Language;
+        }
+        const savedLang = localStorage.getItem('language') as Language;
+        if (savedLang && ['en', 'he', 'ru'].includes(savedLang)) {
+          return savedLang;
+        }
         const browserLang = navigator.language.toLowerCase();
         if (browserLang.startsWith('ru')) return 'ru';
         if (browserLang.startsWith('he')) return 'he';

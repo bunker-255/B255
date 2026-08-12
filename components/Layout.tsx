@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { LocalizedLink as Link } from './LocalizedLink';
 import { Menu, X, Linkedin, Facebook, MessageCircle, Phone, Mail, Globe, Zap, ChevronRight, Terminal, ExternalLink, Home, Cpu, Wrench } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
@@ -8,12 +8,19 @@ import { useLanguage } from '../lib/LanguageContext';
 const LanguageSwitcher: React.FC<{ mobile?: boolean }> = ({ mobile }) => {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
-  const selectLanguage = (lang: 'en' | 'he' | 'ru') => {
-    setLanguage(lang);
+  const selectLanguage = (newLang: 'en' | 'he' | 'ru') => {
+    setLanguage(newLang);
     setIsOpen(false);
+
+    const currentPath = location.pathname;
+    const cleanPath = currentPath.replace(/^\/(en|ru|he)(\/|$)/, '/');
+    const targetPath = `/${newLang}${cleanPath === '/' ? '' : cleanPath}${location.search}${location.hash}`;
+    navigate(targetPath);
   };
 
   if (mobile) {

@@ -8,12 +8,14 @@ export const LocalizedLink: React.FC<LinkProps> = ({ to, ...props }) => {
   let localizedTo = to;
   if (typeof to === 'string') {
     if (to.startsWith('/')) {
-      localizedTo = `/${language}${to === '/' ? '' : to}`;
+      const cleanPath = to.replace(/^\/(en|ru|he)(\/|$)/, '/');
+      localizedTo = `/${language}${cleanPath === '/' ? '' : cleanPath}`;
     }
   } else if (to && to.pathname && to.pathname.startsWith('/')) {
+    const cleanPath = to.pathname.replace(/^\/(en|ru|he)(\/|$)/, '/');
     localizedTo = {
       ...to,
-      pathname: `/${language}${to.pathname === '/' ? '' : to.pathname}`
+      pathname: `/${language}${cleanPath === '/' ? '' : cleanPath}`
     };
   }
 
