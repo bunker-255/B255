@@ -30,7 +30,7 @@ export const Tools: React.FC = () => {
         "name": t.tools.items.sun.title,
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "Web",
-        "url": "https://sun.bunker-255.com",
+        "url": "https://atmo.bunker-255.com",
         // @ts-ignore
         "description": t.tools.items.sun.desc
       },
@@ -93,7 +93,7 @@ export const Tools: React.FC = () => {
       icon: Sun,
       categoryIcon: Sun,
       theme: 'amber',
-      link: 'https://sun.bunker-255.com',
+      link: 'https://atmo.bunker-255.com',
       category: 'entertainment'
     },
     {

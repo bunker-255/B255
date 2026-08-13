@@ -63,8 +63,8 @@ export const Home: React.FC = () => {
             },
             {
                 "@type": "SoftwareApplication",
-                "name": "SunBunker",
-                "url": "https://sun.bunker-255.com",
+                "name": "Atmo",
+                "url": "https://atmo.bunker-255.com",
                 "description": "Sun, weather & beach leisure tool."
             },
             {
@@ -111,7 +111,7 @@ export const Home: React.FC = () => {
       icon: Sun,
       categoryIcon: Sun,
       theme: 'amber',
-      link: 'https://sun.bunker-255.com',
+      link: 'https://atmo.bunker-255.com',
       category: 'entertainment'
     },
     {
